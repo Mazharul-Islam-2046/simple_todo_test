@@ -67,7 +67,10 @@ export function AuthenticationDialog() {
         </form> */}
 
         <Form {...form}>
-          <form className="grid gap-6 py-4" onSubmit={form.handleSubmit(onSubmit)}>
+          <form
+            className="grid gap-6 py-4"
+            onSubmit={form.handleSubmit(onSubmit)}
+          >
             <FormField
               control={form.control}
               name="name"
