@@ -63,7 +63,7 @@ export function AuthenticationDialog() {
                 <FormItem className="grid gap-3">
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="john@example.com" {...field} />
+                    <Input type="email" placeholder="john@example.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -75,9 +75,9 @@ export function AuthenticationDialog() {
               name="password"
               render={({ field }) => (
                 <FormItem className="grid gap-3">
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Password</FormLabel>
                   <FormControl>
-                    <Input placeholder="Your Password" {...field} />
+                    <Input type="password" placeholder="Your Password" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
